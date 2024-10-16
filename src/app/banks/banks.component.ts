@@ -2,11 +2,12 @@ import {Component, OnInit} from '@angular/core';
 import { Bank } from '../bank';
 import { BANKS } from '../banks';
 import { NgFor } from '@angular/common';
+import { BankDetailComponent } from '../bank-detail/bank-detail.component';
 
 @Component({
   selector: 'app-banks',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, BankDetailComponent],
   templateUrl: './banks.component.html',
   styleUrl: './banks.component.css'
 })
